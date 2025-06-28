@@ -1,48 +1,52 @@
-# [Ecosyste.ms: Repos](https://repos.ecosyste.ms)
+# [Auralis NLP](https://auralis.netlify.app)
 
-An open API service providing repository metadata for many open source software ecosystems.
+Auralis is an open API service that applies natural language processing (NLP) and semantic analysis to open source repositories across multiple ecosystems.
 
-This project is part of [Ecosyste.ms](https://ecosyste.ms): Tools and open datasets to support, sustain, and secure critical digital infrastructure.
+It is built on top of [Ecosyste.ms: Repos](https://repos.ecosyste.ms), an open dataset and API for exploring open source metadata. Auralis enhances this metadata with deeper insights into repository intent, documentation quality, community signals, and more.
 
 ## API
 
-Documentation for the REST API is available here: [https://repos.ecosyste.ms/docs](https://repos.ecosyste.ms/docs)
+API documentation is available at: [https://auralis.tools/docs](https://auralis.tools/docs)
 
-The default rate limit for the API is 5000/req per hour based on your IP address, get in contact if you need to to increase your rate limit.
+The underlying metadata is powered by the [Ecosyste.ms Repos API](https://repos.ecosyste.ms/docs), with additional NLP layers processed and served by Auralis.
+
+Default usage is limited to **5000 requests per hour per IP**. Contact us if you need higher limits.
 
 ## Development
 
-For development and deployment documentation, check out [DEVELOPMENT.md](DEVELOPMENT.md)
+For setup and deployment instructions, see [DEVELOPMENT.md](DEVELOPMENT.md).  
+This includes how to run the Auralis NLP pipeline locally, configure environment variables, and connect to the upstream metadata API.
 
 ## Contribute
 
-Please do! The source code is hosted at [GitHub](https://github.com/ecosyste-ms/repos). If you want something, [open an issue](https://github.com/ecosyste-ms/repos/issues/new) or a pull request.
+We welcome contributions! The source code is hosted on [GitHub](https://github.com/auralis-nlp/auralis).  
+To get involved, [open an issue](https://github.com/auralis-nlp/auralis/issues/new) or submit a pull request.
 
-If you need want to contribute but don't know where to start, take a look at the issues tagged as ["Help Wanted"](https://github.com/ecosyste-ms/repos/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22).
+If you're looking for a place to start, check out the ["Help Wanted"](https://github.com/auralis-nlp/auralis/issues?q=is%3Aopen+label%3A%22help+wanted%22) issues.
 
-You can also help triage issues. This can include reproducing bug reports, or asking for vital information such as version numbers or reproduction instructions. 
+You can also help by triaging — this includes confirming bug reports, improving issue descriptions, or requesting reproduction steps when missing.
 
-Finally, this is an open source project. If you would like to become a maintainer, we will consider adding you if you contribute frequently to the project. Feel free to ask.
+Auralis is an open-source project. Frequent contributors may be invited to join as maintainers.
 
-For other updates, follow the project on Twitter: [@ecosyste_ms](https://twitter.com/ecosyste_ms).
+Follow our progress on Twitter: [@auralis_nlp](https://twitter.com/auralis_nlp)
 
-### Note on Patches/Pull Requests
+### Note on Patches / Pull Requests
 
- * Fork the project.
- * Make your feature addition or bug fix.
- * Add tests for it. This is important so we don't break it in a future version unintentionally.
- * Send a pull request. Bonus points for topic branches.
+- Fork the project
+- Implement your feature or bug fix
+- Include test coverage if applicable
+- Open a pull request (topic branches encouraged!)
 
-### Vulnerability disclosure
+### Vulnerability Disclosure
 
-We support and encourage security research on Ecosyste.ms under the terms of our [vulnerability disclosure policy](https://github.com/ecosyste-ms/repos/security/policy).
+We encourage responsible security research. Please refer to our [vulnerability disclosure policy](https://github.com/auralis-nlp/auralis/security/policy).
 
 ### Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/ecosyste-ms/.github/blob/main/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+Participation in this project is subject to our [Code of Conduct](https://github.com/auralis-nlp/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Copyright
 
-Code is licensed under [GNU Affero License](LICENSE) © 2022 [Andrew Nesbitt](https://github.com/andrew).
+Code is licensed under the [GNU AGPL-3.0 License](LICENSE) © 2025 [The Auralis Project](https://github.com/auralis-nlp).
 
-Data from the API is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Underlying metadata is sourced from [Ecosyste.ms](https://repos.ecosyste.ms) and is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

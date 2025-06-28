@@ -1,4 +1,4 @@
-# [Auralis NLP](https://auralis.netlify.app)
+# [Auralis NLP](https://auralisedu.netlify.app)
 
 Auralis is an open API service that applies natural language processing (NLP) and semantic analysis to open source repositories across multiple ecosystems.
 

@@ -1,0 +1,32 @@
+<div class="card mb-3 host d-flex" id="host_<%= host.id %>">
+  <div class="card-body pb-1">
+    <div class="d-flex">
+      
+      <div class="flex-grow-1 ms-3 text-break">
+        <h5 class='card-title'>
+          <% if host.repositories_count.zero? %>
+            <%= host.name %>
+          <% else %>
+            <%= link_to host.name, host_path(host.name) %>
+          <% end %>
+          <% if host.display_kind? %>
+            <i><small class="text-muted"><%= host.kind %></small></i>
+          <% end %>
+        </h5>
+      
+        <p class="card-subtitle mb-2 text-muted">
+          
+          <% if host.repositories_count.zero? %>
+            <i>Coming soon</i>
+          <% else %>
+            <%= "#{number_with_delimiter host.repositories_count} #{Repository.model_name.human(count: host.repositories_count)}" %><br/>
+            <%= "#{number_with_delimiter host.owners_count} #{Owner.model_name.human(count: host.owners_count)}" %>
+          <% end %>
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="<%= host.icon_url %>" class="rounded" height='40' width='40' onerror="this.style.display='none'">
+      </div>  
+    </div>
+  </div>
+</div>
